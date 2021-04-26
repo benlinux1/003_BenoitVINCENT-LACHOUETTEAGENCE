@@ -90,10 +90,14 @@ a:hover {
     right: 0;
 }
 
+/* Texture à supprimer pour rétablir le contraste
+
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
+} 
+
+*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -676,8 +680,9 @@ a {
     margin: auto auto auto auto;
 }
 
+/* Changement de la taille de police des paragraphes (de 11 à 16px) */
 p {
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
