@@ -477,6 +477,7 @@ button {
     border-bottom-color: rgba(0, 0, 0, .1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+    position: relative; /* Add position relative on first button in order to work ;) */
 }
 
 .icon-md {
@@ -655,7 +656,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black !important; /* Edit #575757 in black color for contrast*/
 }
 
 .container {
