@@ -32,12 +32,12 @@
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 		<link rel="stylesheet" type="text/css" href="css/et-line.css"/>
 		
-		<!-- Liens corrigés vers Dossier JS -->
-		<script src="js/jquery-2.1.0.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/blocs.js"></script>
+		<!-- Liens corrigés vers Dossier JS / add defer for 3 scripts to increase speed & minify ressources -->
+		<script defer src="./js/jquery-2.1.0.min.js"></script>
+		<script defer src="./js/bootstrap.min.js"></script>
+		<script src="./js/blocs.min.js"></script>
 		<script src="js/jquery.touchSwipe.js" defer></script>
-		<script src="js/gmaps.js"></script>
+		<script defer src="js/gmaps.js"></script>
 
 		<!-- Baslises title et description corrigées -->
 		<title>La Chouette Agence - Web Design Lyon</title>
@@ -79,8 +79,8 @@
 			<!-- Main content START -->
 			<main role=”main”>
 
-				<!-- bloc-1-presentation --> <!-- Delete block-bg-texture mask for content accessibility-->
-				<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge text-center b-parallax bloc-lg" id="bloc-1-hero" role="region" aria-labelledby="presentation">
+				<!-- bloc-1-presentation --> <!-- Delete blue-bcg to increase speed & block-bg-texture mask for content accessibility-->
+				<section class="bloc bg-banniere d-bloc bg-t-edge text-center b-parallax bloc-lg" id="bloc-1-hero" role="region" aria-labelledby="presentation">
 					<img src="img/logo-min.png" class="center-block image-resize-mode" width="100" alt="Logo La chouette agence entreprise web design à Lyon" title="Logo de la Chouette Agence"/>
 					<h1 class="text-center hero-bloc-text tc-white">
 						<strong>La chouette agence</strong>
