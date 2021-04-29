@@ -43,7 +43,6 @@
 		<title>La Chouette Agence - Web Design Lyon</title>
 		<meta name="description" content="La Chouette Agence est une agence de webdesign située à Lyon, spécialisée en stratégie et en illustrations, pour aider les entreprises locales à attirer de nouveaux clients " />
 
-		
 		<!-- Analytics -->
 		<!-- Recommandation pour l'Agence : intégrer Google Analytics -->
 		<!-- Analytics END -->
@@ -54,23 +53,23 @@
 		<div class="page-container">
 			
 			<!-- Header -->
-			<header class="navbar row">
+			<header class="navbar row" role=”banner”>
 				<nav class="navbar-header">
 					<a class="navbar-brand" href="index.html">
 						<img src="img/la-chouette-agence-min.png" alt="Bannière La Chouette Agence Lyon" title="Bannière de la Chouette Agence" height="40" />
 					</a>
-					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" title="Menu de navigation">
+					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" title="Menu de navigation" role="button" aria-haspopup="menu">
 						<span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
 				</nav>
-				<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+				<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav" aria-expanded="true" role="menu">
 					<ul class="site-navigation nav navbar-nav">
 						<li>
-							<a href="index.html" title="Accueil">Accueil</a>
+							<a href="index.html" title="Accueil" role="menuitem">Accueil</a>
 						</li>
 						<!-- Puce vide supprimée -->
 						<li>
-							<a href="page2.html" title="Contactez-nous">Contact</a> <!-- Lien renommé -->
+							<a href="page2.html" title="Contactez-nous" role="menuitem">Contact</a> <!-- Lien renommé -->
 						</li>
 					</ul>
 				</nav>
@@ -78,10 +77,10 @@
 			<!-- Header END -->
 
 			<!-- Main content START -->
-			<main>
+			<main role=”main”>
 
 				<!-- bloc-1-presentation --> <!-- Delete block-bg-texture mask for content accessibility-->
-				<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge text-center b-parallax bloc-lg" id="bloc-1-hero">
+				<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge text-center b-parallax bloc-lg" id="bloc-1-hero" role="region" aria-labelledby="presentation">
 					<img src="img/logo-min.png" class="center-block image-resize-mode" width="100" alt="Logo La chouette agence entreprise web design à Lyon" title="Logo de la Chouette Agence"/>
 					<h1 class="text-center hero-bloc-text tc-white">
 						<strong>La chouette agence</strong>
@@ -94,7 +93,7 @@
 				<!-- bloc-1-presentation END -->
 
 				<!-- bloc-2-services -->
-				<section class="bloc-md bgc-white" id="bloc-2-services">
+				<section class="bloc-md bgc-white" id="bloc-2-services" role="region" aria-labelledby="services">
 					<p class="text-center">	
 						<strong>Voici les solutions que nous proposons pour aider les entreprises à devenir attractives et visibles sur internet :</strong>
 					</p>
@@ -137,7 +136,7 @@
 				<!-- bloc-2-services END -->
 
 				<!-- bloc-3-what-i-do -->
-				<section class="bloc bgc-atomic-tangerine bg-presentation d-bloc b-parallax bloc-sm text-center" id="bloc-3-what-i-do">
+				<section class="bloc bgc-atomic-tangerine bg-presentation d-bloc b-parallax bloc-sm text-center" id="bloc-3-what-i-do" role="region" aria-labelledby="objectifs">
 					<h2 class="col-sm-12 mg-md"><strong>Nos objectifs ?</strong> </h2>
 					<br/>
 					<p class="tight-width-whitespace text-center">
@@ -158,7 +157,7 @@
 				<!-- bloc-3-what-i-do END -->
 
 				<!-- bloc-4-portfolio -->
-				<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc container" id="bloc-4-portfolio">
+				<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc container" id="bloc-4-portfolio" role="region" aria-labelledby="portofolio">
 					<h2 class="col-sm-12 text-center snapshot-lb modal-body">
 						Voici quelques exemples de nos réalisations clients :
 					</h2>
@@ -232,7 +231,7 @@
 			</main>
 
 			<!-- Footer - bloc-8 -->
-			<footer class="bloc bgc-atomic-tangerine d-bloc col-sm-12 bloc-sm" id="bloc-8">
+			<footer class="bloc bgc-atomic-tangerine d-bloc col-sm-12 bloc-sm" id="bloc-8" role=”contentinfo”>
 				<h2 class="text-center mg-md">Comment nous contacter ?</h2>
 				<p class="text-center white">
 					<strong>LA CHOUETTE AGENCE</strong><br>
@@ -274,7 +273,6 @@
 				</ul>		
 			</footer>
 			<!-- Footer - bloc-8 END -->
-
 		</div>
 		<!-- Principal conteneur END -->
 		
