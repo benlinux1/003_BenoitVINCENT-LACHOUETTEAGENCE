@@ -644,7 +644,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -681,9 +680,8 @@ a {
     margin: auto auto auto auto;
 }
 
-/* Changement de la taille de police des paragraphes (de 11 à 16px) */
 p {
-    font-size: 16px;
+    font-size: 16px; /* Edit font-size (from 11 to 16px) */
 }
 
 .tight-width-whitespace {
@@ -700,7 +698,7 @@ p {
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
+    padding: 12px 28px 6px 28px; /* Edit padding-bottom (from 12 to 6px) for vertical-align */
     font-size: 16px;
     font-weight: 700;
 }
@@ -715,6 +713,7 @@ h2 {
     font-size: 24px;
     font-weight: bold; 
     line-height: 1.4em;
+    color: #f55f3b; /* Edit #F3976C for contrast*/ 
 }
 
 h3 {
@@ -730,8 +729,8 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-#bloc-1-hero > h1 { /* Edit with bloc id*/
-    color: #f55f3b; /* Edit #F3976C for contrast*/
+h1 {
+    color: #f55f3b; /* Edit #F3976C for contrast*/ 
 }
 
 h4 {
@@ -783,7 +782,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #f55f3b; /* Edit #F3976C for contrast*/ 
 }
 
 .btn-atomic-tangerine {
