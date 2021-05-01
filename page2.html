@@ -92,39 +92,39 @@
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
-					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<form id="form_1" method="POST" action="form_1.php" class="form-group" novalidate success-msg="Nous avons bien reçu votre message et vous en remercions. Notre équipe reviendra vers vous dans les plus brefs délais" fail-msg="Nous sommes navrés mais il semblerait qu'une erreur se soit produite. Merci de bien vouloir reformuler votre demande.">
+						<label for="name">
+							Quel est votre nom ?
+						</label>
+						<input type="text" name="name" id="name" placeholder="Vincent DUPONT" class="form-control" required />
+						<br />
+						<label for="mail">
+							Quelle est votre adresse e-mail ?
+						</label>
+						<input type="email" name="mail" id="mail" placeholder="abcdef@gmail.com" class="form-control" required />
+						<br />
+						<p>
+							Comment avez-vous connu la Chouette Agence ? <br />
+							<input type="checkbox" name="internet" id="internet"/>
+							<label for="internet">Par Internet</label><br />
+							<input type="checkbox" name="presse" id="presse"/>
+							<label for="presse">Dans la presse</label><br />
+							<input type="checkbox" name="friend" id="friend"/>
+							<label for="friend">Par un ami, une connaissance</label><br />
+							<input type="checkbox" name="pub" id="pub"/>
+							<label for="internet">Grâce à une publicité</label><br />
+						</p>
+
 						<div class="form-group">
 							<label>
-								Nom
+								Merci d'ajouter quelques lignes à propos de votre projet<br>
 							</label>
-							<input id="name" class="form-control" required />
-						</div>
-						<div class="form-group">
-							<label>
-								Adresse email
-							</label>
-							<input id="email" class="form-control" type="email" required />
-						</div>
-						<div class="form-group">
-							<label>
-								Comment nous avez-vous connu ?
-							</label>
-							<input class="form-control" type="email" required id="input_504" />
-						</div>
-						<div class="form-group">
-							<label>
-								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-							</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+							<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 						</div> 
 						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 							Envoyer
 						</button>
 					</form>
-				</div>
-				<div class="col-sm-6">
-					<p>
-						contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-					</p>
 				</div>
 			</div>
 		</div>
