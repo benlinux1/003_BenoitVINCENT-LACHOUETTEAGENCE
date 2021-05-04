@@ -46,144 +46,148 @@
 		<!-- Analytics END -->
 	</head>
 	<body>
-	<!-- Principal conteneur -->
-	<div class="page-container">
+		<!-- Principal conteneur -->
+		<div class="page-container">
+			
+			<!-- Bloc 0 : Header -->
+			<header class="navbar row">
+				<nav class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/la-chouette-agence-min.webp" alt="Bannière La Chouette Agence Lyon" title="Bannière de la Chouette Agence" height="40" />
+					</a>
+					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" title="Menu de navigation" role="button" aria-haspopup="menu">
+						<span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+				</nav>
+				<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav" aria-expanded="true" role="menu">
+					<ul class="site-navigation nav navbar-nav">
+						<li>
+							<a href="index.html" title="Revenir à l'accueil" role="menuitem">Accueil</a>
+						</li>
+						<!-- Puce vide supprimée -->
+						<li>
+							<a href="page2.html" title="Contactez-nous" role="menuitem">Contact</a> <!-- Lien renommé -->
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Bloc 0 : Header END -->
+
+			<!-- bloc-6 -->
+			<!-- Add bg-banniere class for coherency & Delete few classes -->
+			<section class="bloc bg-banniere d-bloc bloc-lg b-parallax" id="bloc-6">
+				<img src="img/logo-min.webp" class="center-block image-resize-mode" width="100" alt="Logo La chouette agence entreprise web design à Lyon" title="Logo de la Chouette Agence"/>
+				<h1 class="text-center hero-bloc-text tc-white">
+					Parlons web design !
+				</h1>
+				<p class="text-center mg-lg tc-white tight-width-whitespace">
+					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+				</p>
+			</section>
+			<!-- bloc-6 END -->
+
+			<!-- bloc-7 -->
+			<form class="col-sm-6" id="form_1" method="POST" action="form_1.php" class="bloc bgc-white l-bloc bloc-lg" novalidate success-msg="Nous avons bien reçu votre message et vous en remercions. Notre équipe reviendra vers vous dans les plus brefs délais" fail-msg="Nous sommes navrés mais il semblerait qu'une erreur se soit produite. Merci de bien vouloir reformuler votre demande.">
+				<fieldset>
+					<legend>Vos coordonnées</legend>
+					<label for="name">
+						Quel est votre nom ?
+					</label>
+					<input type="text" name="name" id="name" placeholder="Vincent DUPONT" class="form-control" required autofocus/>
+					<br />
+
+					<label for="mail">
+						Quelle est votre adresse e-mail ?
+					</label>
+					<input type="email" name="mail" id="mail" placeholder="abcdef@gmail.com" class="form-control" required />
+					<br />
+
+					<label for="tel">
+						Quelle est votre numéro de téléphone ?
+					</label>
+					<input type="tel" name="tel" id="tel" placeholder="01 23 45 67 89" class="form-control" />
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<legend>Comment avez-vous connu la Chouette Agence ?</legend>
+					<input type="checkbox" name="internet" id="internet"/>
+					<label for="internet">Par Internet</label><br />
+					<input type="checkbox" name="presse" id="presse"/>
+					<label for="presse">Dans la presse</label><br />
+					<input type="checkbox" name="friend" id="friend"/>
+					<label for="friend">Par un ami, une connaissance</label><br />
+					<input type="checkbox" name="pub" id="pub"/>
+					<label for="internet">Grâce à une publicité</label><br />
+					<input type="checkbox" name="other" id="other"/>
+					<label for="other">D'une autre manière</label><br />
+					<label for="precisions">Si "d'une autre manière", veuillez préciser :</label>
+					<textarea name="precisions" class="form-control" id="precisions" cols="50" rows="4"></textarea>
+				</fieldset>
+				<br />
+				<fieldset>
+					<legend>Votre projet</legend>
+					<label>
+						Merci de décrire votre projet en quelques lignes<br>
+					</label>
+					<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+					<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" value="Envoyer">
+				</fieldset>
+			</form>
+			<!-- bloc-7 END -->
+
+			<!-- ScrollToTop Button -->
+			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<!-- ScrollToTop Button END-->
+
+
+			<!-- Footer - bloc-8 -->
+			<footer class="bloc bgc-atomic-tangerine d-bloc col-sm-12 bloc-sm" id="bloc-8">
+				<h2 class="text-center mg-md">Comment nous contacter ?</h2>
+				<p class="text-center white">
+					<strong>LA CHOUETTE AGENCE</strong><br>
+				</p>
+				<address class="col-sm-12 mg-md text-center">
+					<a href="https://www.google.com/maps/place/2+Place+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673">
+						2 place Sathonay <br/>
+						69001 LYON <br/><br/>
+					</a>
+					<a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br>
+					<a href="tel:+0468686868">04 68 68 68 68</a>
+				</address>
+				
+				<!-- Icônes Réseaux sociaux -->
+				<ul class="row row-no-gutters social list-unstyled">
+					<li class="col-sm-3 col-xs-3 text-center"> <!-- Important : lien HTML à modifier pour backlinks -->
+						<a class="social" href="https://twitter.com/?lang=fr" title="Rejoignez notre page Twitter"><span class="fa fa-twitter icon-md white"></span></a>
+					</li>
+					<li class="col-sm-3 col-xs-3 text-center"> <!-- Important : lien HTML à modifier pour backlinks -->
+						<a class="social" href="https://www.facebook.com/" title="Rejoignez notre page Facebook"><span class="fa fa-facebook icon-md white"></span></a>
+					</li>
+					<li class="col-sm-3 col-xs-3 text-center"> <!-- Important : lien HTML à modifier pour backlinks -->
+						<a class="social" href="https://dribbble.com/" title="Rejoignez-nous sur Dribbble"><span class="fa fa-dribbble icon-md white"></span></a>
+					</li>
+					<li class="col-sm-3 col-xs-3 text-center"> <!-- Important : lien HTML à modifier pour backlinks -->
+						<a class="social" href="https://www.instagram.com/?hl=fr" title="Rejoignez-nous sur Instagram"><span class="fa fa-instagram icon-md white"></span></a>
+					</li>
+				</ul>
+				<!-- Horaires de l'Agence --> <!-- Add bloc-sm class for margin top & bottom -->
+				<p class="text-center col-sm-12 bloc-sm">L'agence est ouverte de 9h à 18h, du lundi au vendredi</p>
+
+				<!-- Partenaires --> <!-- Suppression des link juice -->
+				<p class="text-center white"><strong>Découvrez nos partenaires :</strong></p>
+				<ul class="text-center list-unstyled">
+					<li><a href="voiture.com">voiture.com</a></li>
+					<li><a href="pizza.com">pizza.com</a></li>
+					<li><a href="matoiture.com">matoiture.com</a></li>
+					<li><a href="immobilierseo.com">immobilierseo.com</a></li>
+				</ul>		
+			</footer>
+			<!-- Footer - bloc-8 END -->
+
+		</div>
+		<!-- Principal conteneur END -->
 		
-	<!-- Bloc 0 : Header -->
-	<header class="navbar row">
-		<nav class="navbar-header">
-			<a class="navbar-brand" href="index.html">
-				<img src="img/la-chouette-agence-min.webp" alt="Bannière La Chouette Agence Lyon" title="Bannière de la Chouette Agence" height="40" />
-			</a>
-			<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" title="Menu de navigation" role="button" aria-haspopup="menu">
-				<span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-			</button>
-		</nav>
-		<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav" aria-expanded="true" role="menu">
-			<ul class="site-navigation nav navbar-nav">
-				<li>
-					<a href="index.html" title="Revenir à l'accueil" role="menuitem">Accueil</a>
-				</li>
-				<!-- Puce vide supprimée -->
-				<li>
-					<a href="page2.html" title="Contactez-nous" role="menuitem">Contact</a> <!-- Lien renommé -->
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<!-- Bloc 0 : Header END -->
-
-	<!-- bloc-6 -->
-	<!-- Add bg-banniere class for coherency & Delete few classes -->
-	<section class="bloc bg-banniere d-bloc bloc-lg b-parallax" id="bloc-6">
-		<img src="img/logo-min.webp" class="center-block image-resize-mode" width="100" alt="Logo La chouette agence entreprise web design à Lyon" title="Logo de la Chouette Agence"/>
-		<h1 class="text-center hero-bloc-text tc-white">
-			Parlons web design !
-		</h1>
-		<p class="text-center mg-lg tc-white tight-width-whitespace">
-			Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-			Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-		</p>
-	</section>
-	<!-- bloc-6 END -->
-
-	<!-- bloc-7 -->
-	<div class="bloc bgc-white l-bloc bloc-lg" id="bloc-7">
-		<form class="col-sm-6" id="form_1" method="POST" action="form_1.php" class="form-group" novalidate success-msg="Nous avons bien reçu votre message et vous en remercions. Notre équipe reviendra vers vous dans les plus brefs délais" fail-msg="Nous sommes navrés mais il semblerait qu'une erreur se soit produite. Merci de bien vouloir reformuler votre demande.">
-			<label for="name">
-				Quel est votre nom ?
-			</label>
-			<input type="text" name="name" id="name" placeholder="Vincent DUPONT" class="form-control" required autofocus/>
-			<br />
-
-			<label for="mail">
-				Quelle est votre adresse e-mail ?
-			</label>
-			<input type="email" name="mail" id="mail" placeholder="abcdef@gmail.com" class="form-control" required />
-			<br />
-
-			<label for="tel">
-				Quelle est votre numéro de téléphone ?
-			</label>
-			<input type="tel" name="tel" id="tel" placeholder="01 23 45 67 89" class="form-control" />
-			<br />
-
-			<p>
-				Comment avez-vous connu la Chouette Agence ?<br />
-
-				<input type="checkbox" name="internet" id="internet"/>
-				<label for="internet">Par Internet</label><br />
-				<input type="checkbox" name="presse" id="presse"/>
-				<label for="presse">Dans la presse</label><br />
-				<input type="checkbox" name="friend" id="friend"/>
-				<label for="friend">Par un ami, une connaissance</label><br />
-				<input type="checkbox" name="pub" id="pub"/>
-				<label for="internet">Grâce à une publicité</label><br />
-			</p>
-			<br />
-			<p class="form-group">
-				<label>
-					Merci d'ajouter quelques lignes à propos de votre projet<br>
-				</label>
-				<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-			</p> 
-			<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" value="Envoyer">
-		</form>
-	</div>
-	<!-- bloc-7 END -->
-
-	<!-- ScrollToTop Button -->
-	<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-	<!-- ScrollToTop Button END-->
-
-
-	<!-- Footer - bloc-8 -->
-	<footer class="bloc bgc-atomic-tangerine d-bloc col-sm-12 bloc-sm" id="bloc-8">
-		<h2 class="text-center mg-md">Comment nous contacter ?</h2>
-		<p class="text-center white">
-			<strong>LA CHOUETTE AGENCE</strong><br>
-		</p>
-		<address class="col-sm-12 mg-md text-center">
-			<a href="https://www.google.com/maps/place/2+Place+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673">
-				2 place Sathonay <br/>
-				69001 LYON <br/><br/>
-			</a>
-			<a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br>
-			<a href="tel:+0468686868">04 68 68 68 68</a>
-		</address>
-		
-		<!-- Icônes Réseaux sociaux -->
-		<ul class="row row-no-gutters social list-unstyled">
-			<li class="col-sm-3 col-xs-3 text-center"> <!-- Important : lien HTML à modifier pour backlinks -->
-				<a class="social" href="https://twitter.com/?lang=fr" title="Rejoignez notre page Twitter"><span class="fa fa-twitter icon-md white"></span></a>
-			</li>
-			<li class="col-sm-3 col-xs-3 text-center"> <!-- Important : lien HTML à modifier pour backlinks -->
-				<a class="social" href="https://www.facebook.com/" title="Rejoignez notre page Facebook"><span class="fa fa-facebook icon-md white"></span></a>
-			</li>
-			<li class="col-sm-3 col-xs-3 text-center"> <!-- Important : lien HTML à modifier pour backlinks -->
-				<a class="social" href="https://dribbble.com/" title="Rejoignez-nous sur Dribbble"><span class="fa fa-dribbble icon-md white"></span></a>
-			</li>
-			<li class="col-sm-3 col-xs-3 text-center"> <!-- Important : lien HTML à modifier pour backlinks -->
-				<a class="social" href="https://www.instagram.com/?hl=fr" title="Rejoignez-nous sur Instagram"><span class="fa fa-instagram icon-md white"></span></a>
-			</li>
-		</ul>
-		<!-- Horaires de l'Agence --> <!-- Add bloc-sm class for margin top & bottom -->
-		<p class="text-center col-sm-12 bloc-sm">L'agence est ouverte de 9h à 18h, du lundi au vendredi</p>
-
-		<!-- Partenaires --> <!-- Suppression des link juice -->
-		<p class="text-center white"><strong>Découvrez nos partenaires :</strong></p>
-		<ul class="text-center list-unstyled">
-			<li><a href="voiture.com">voiture.com</a></li>
-			<li><a href="pizza.com">pizza.com</a></li>
-			<li><a href="matoiture.com">matoiture.com</a></li>
-			<li><a href="immobilierseo.com">immobilierseo.com</a></li>
-		</ul>		
-	</footer>
-	<!-- Footer - bloc-8 END -->
-
-	</div>
-	<!-- Principal conteneur END -->
-		
-
 	</body>
 </html>
