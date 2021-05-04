@@ -1,5 +1,7 @@
-<!doctype html>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="fr"> <!-- Langue modifiée -->
+	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Langue par défaut -->
@@ -55,11 +57,11 @@
 					<a class="navbar-brand" href="index.html">
 						<img src="img/la-chouette-agence-min.webp" alt="Bannière La Chouette Agence Lyon" title="Bannière de la Chouette Agence" height="40" />
 					</a>
-					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" title="Menu de navigation" role="button" aria-haspopup="menu">
+					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" title="Menu de navigation" aria-haspopup="menu">
 						<span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
 				</nav>
-				<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav" aria-expanded="true" role="menu">
+				<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav" aria-expanded="true">
 					<ul class="site-navigation nav navbar-nav">
 						<li>
 							<a href="index.html" title="Revenir à l'accueil" role="menuitem">Accueil</a>
@@ -88,8 +90,8 @@
 			<!-- bloc-6 END -->
 
 			<!-- bloc-7 -->
-			<form class="col-sm-6" id="form_1" method="POST" action="form_1.php" class="bloc bgc-white l-bloc bloc-lg" novalidate success-msg="Nous avons bien reçu votre message et vous en remercions. Notre équipe reviendra vers vous dans les plus brefs délais" fail-msg="Nous sommes navrés mais il semblerait qu'une erreur se soit produite. Merci de bien vouloir reformuler votre demande.">
-				<fieldset>
+			<form class="bgc-white mg-md col-sm-12" id="form_1" method="POST" action="form_1.php" novalidate>
+				<fieldset class="col-sm-12">
 					<legend>Vos coordonnées</legend>
 					<label for="name">
 						Quel est votre nom ?
@@ -110,7 +112,7 @@
 					<br />
 				</fieldset>
 
-				<fieldset>
+				<fieldset class="col-sm-12">
 					<legend>Comment avez-vous connu la Chouette Agence ?</legend>
 					<input type="checkbox" name="internet" id="internet"/>
 					<label for="internet">Par Internet</label><br />
@@ -126,7 +128,7 @@
 					<textarea name="precisions" class="form-control" id="precisions" cols="50" rows="4"></textarea>
 				</fieldset>
 				<br />
-				<fieldset>
+				<fieldset class="col-sm-12">
 					<legend>Votre projet</legend>
 					<label>
 						Merci de décrire votre projet en quelques lignes<br>
