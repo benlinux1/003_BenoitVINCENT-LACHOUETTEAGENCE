@@ -3420,7 +3420,7 @@ textarea.input-lg {
     height: 34px;
     line-height: 34px;
     text-align: center;
-    pointer-events: none
+    /* pointer-events: none */
 }
 
 .form-group-lg .form-control+.form-control-feedback,
@@ -3719,9 +3719,9 @@ fieldset[disabled] .btn {
     opacity: .65
 }
 
-a.btn.disabled,
+/* a.btn.disabled,
 fieldset[disabled] a.btn {
-    pointer-events: none
+    pointer-events: none */
 }
 
 .btn-default {
@@ -4381,7 +4381,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    /* filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) Erreur lors de l'analyse grammaticale. progid:DXImageTransform.Microsoft.gradient(enabled=false) } */
 }
 
 .open>.dropdown-menu {
@@ -4654,7 +4654,7 @@ tbody.collapse.in {
 [data-toggle=buttons]>.btn-group>.btn input[type=radio] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
-    pointer-events: none
+    /* pointer-events: none */
 }
 
 .input-group {
@@ -5132,7 +5132,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) { /* Edit max-device-width */
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
