@@ -3719,9 +3719,9 @@ fieldset[disabled] .btn {
     opacity: .65
 }
 
-/* a.btn.disabled,
+a.btn.disabled,
 fieldset[disabled] a.btn {
-    pointer-events: none */
+ /* Delete pointer-events: none */
 }
 
 .btn-default {
