@@ -697,7 +697,7 @@ p {
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
-    padding: 12px 28px 6px 28px; /* Edit padding-bottom (from 12 to 6px) for vertical-align */
+    padding: 12px 28px 12px 28px;
     font-size: 18px; /* Edit font-size (from 16 to 18px) for contrast with buttons */
     font-weight: 700;
 }
