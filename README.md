@@ -13,7 +13,7 @@ L'objectif visait à optimiser de manière considérable :
 
 - La vitesse et la fluidité de chargement du site
 - Son référencement naturel et sa visibilité sur les moteurs de recherche
-- La lisibilité du site et son accessibilité du site aux personnes en situation de handicap
+- La lisibilité du site et son accessibilité aux personnes en situation de handicap
 - La structure du site avec un balisage sémantique irréprochable
 
 
