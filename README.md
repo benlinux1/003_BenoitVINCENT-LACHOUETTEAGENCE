@@ -1,3 +1,5 @@
+![benoit-vincent-la-chouette-agence](https://github.com/benlinux1/003_BenoitVINCENT-LACHOUETTEAGENCE/assets/78255467/62b7eeed-83cd-43f8-8fde-0263c096264c)![web-dev-seo- -accessibility](https://github.com/benlinux1/003_BenoitVINCENT-LACHOUETTEAGENCE/assets/78255467/47a3d5c0-9335-4d9b-bbba-0fb184ed1247)
+
 # LA CHOUETTE AGENCE
 Ce dépôt contient un site web pour le P4 du parcours **DEVELOPPEUR WEB**, intitulé **La Chouette Agence**.
 
